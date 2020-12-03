@@ -1,0 +1,49 @@
+$color-primary-orange: #F18134;
+$color-primary-blue: #455AA4;
+
+.header{
+    min-height: 568px;
+    background-image: linear-gradient(rgba($color-primary-orange ,0.50), rgba($color-primary-orange,0.50)),
+    url("../img/office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+    &__info{
+        padding-right: 100px;
+        text-align: right;
+        max-width: 600px;
+    }
+
+    &__title{
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    &__text{
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    &__button{
+        display: inline-block;
+        background-color: $color-primary-blue;
+        padding: 15px;
+        border-radius: 100px;
+        margin-top: 20px;
+        transition: all 0.2s;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        &:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+    }
+}

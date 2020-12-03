@@ -1,0 +1,22 @@
+{
+  "name": "it-labs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/mystyle.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jntsimplu/it-labs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jntsimplu/it-labs/issues"
+  },
+  "homepage": "https://github.com/jntsimplu/it-labs#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
