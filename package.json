@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"node-sass sass/main.scss css/mystyle.css -w"
+    "compile:sass": "node-sass sass/main.scss css/mystyle.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/jntsimplu/it-labs#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21"
   }
 }
