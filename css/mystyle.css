@@ -20,13 +20,14 @@
   .header__button {
     display: inline-block;
     background-color: #455AA4;
-    padding: 15px;
-    border-radius: 100px;
+    padding: 10px 25px;
+    border-radius: 20px;
     margin-top: 20px;
     transition: all 0.2s; }
     .header__button a {
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      font-size: 22px; }
     .header__button:hover {
       transform: translateY(-2px);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
@@ -34,3 +35,69 @@
 .splide__slide img {
   width: 100%;
   height: auto; }
+
+.infos {
+  position: relative; }
+
+.info {
+  min-height: 80vh;
+  background-color: #455AA4;
+  color: white;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%); }
+  .info__try {
+    max-width: 1020px;
+    height: 100%;
+    margin: auto; }
+  .info__title {
+    padding: 20px 0;
+    margin: 10px 0px;
+    font-size: 28px; }
+  .info__text {
+    font-size: 22px; }
+  .info__button {
+    background-color: #F18134;
+    padding: 15px 40px;
+    border-radius: 20px;
+    float: right;
+    transition: all 0.2s;
+    font-size: 22px; }
+    .info__button a {
+      color: black;
+      text-decoration: none; }
+    .info__button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
+
+.info__2 {
+  background-color: #F18134;
+  min-height: 90vh;
+  margin-top: -20vh; }
+  .info__2__delay {
+    margin-top: 30vh;
+    background-color: #F18134;
+    max-width: 1020px;
+    min-height: 60vh;
+    margin: auto; }
+  .info__2__title {
+    font-size: 28px;
+    padding-top: 18vh; }
+  .info__2__button--delay {
+    background-color: #455AA4;
+    padding: 15px 40px;
+    border-radius: 20px;
+    float: right;
+    transition: all 0.2s;
+    font-size: 22px; }
+    .info__2__button--delay a {
+      color: white;
+      text-decoration: none; }
+    .info__2__button--delay:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
+
+.circuit {
+  position: absolute;
+  top: 20px;
+  right:0px;
+}

@@ -32,13 +32,14 @@ $color-primary-blue: #455AA4;
     &__button{
         display: inline-block;
         background-color: $color-primary-blue;
-        padding: 15px;
-        border-radius: 100px;
+        padding: 10px 25px;
+        border-radius: 20px;
         margin-top: 20px;
         transition: all 0.2s;
         a{
             color: white;
             text-decoration: none;
+            font-size: 22px;
         }
 
         &:hover{
@@ -52,4 +53,91 @@ $color-primary-blue: #455AA4;
 .splide__slide img {
     width : 100%;
     height: auto;
+}
+
+.infos{
+    position: relative;
+}
+
+.info{
+    min-height: 80vh;
+    background-color: $color-primary-blue;
+    color: white;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
+    &__try{
+        max-width: 1020px;
+        height: 100%;
+        margin: auto;
+    }
+
+    &__title{
+        padding: 20px 0;
+        margin: 10px 0px;
+        font-size: 28px;
+    }
+
+    &__text{
+        font-size: 22px;
+    }
+
+    &__button{
+        background-color: $color-primary-orange;
+        padding: 15px 40px;
+        border-radius: 20px;
+        float: right;
+        transition: all 0.2s;
+        font-size: 22px;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        &:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+    }
+}
+
+.info__2{
+    background-color: $color-primary-orange;
+    min-height: 90vh;
+    margin-top: -20vh;
+    &__delay{
+        margin-top: 30vh;
+        background-color: $color-primary-orange;
+        max-width: 1020px;
+        min-height: 60vh;
+        margin: auto;
+    }
+
+    &__title{
+        font-size: 28px;
+        padding-top: 18vh;
+    }
+
+    &__button--delay{
+        background-color: $color-primary-blue;
+        padding: 15px 40px;
+        border-radius: 20px;
+        float: right;
+        transition: all 0.2s;
+        font-size: 22px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        &:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+    }
+}
+
+.circuit{
+    position: absolute;
+    top: 20px;
+    left: 800px; 
 }
