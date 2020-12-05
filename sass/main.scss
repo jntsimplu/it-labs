@@ -55,16 +55,15 @@ $color-primary-blue: #455AA4;
     height: auto;
 }
 
-.infos{
-    position: relative;
-}
+
 
 .info{
     min-height: 80vh;
     background-color: $color-primary-blue;
     color: white;
-    position: relative;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
+    // z-index: 1;
+    position: relative;
     &__try{
         max-width: 1020px;
         height: 100%;
@@ -75,10 +74,14 @@ $color-primary-blue: #455AA4;
         padding: 20px 0;
         margin: 10px 0px;
         font-size: 28px;
+        z-index: 2;
+        position: relative;
     }
 
     &__text{
         font-size: 22px;
+        z-index: 2;
+        position: relative;
     }
 
     &__button{
@@ -88,6 +91,8 @@ $color-primary-blue: #455AA4;
         float: right;
         transition: all 0.2s;
         font-size: 22px;
+        z-index: 2;
+        position: relative;
         a{
             color: black;
             text-decoration: none;
@@ -124,6 +129,8 @@ $color-primary-blue: #455AA4;
         float: right;
         transition: all 0.2s;
         font-size: 22px;
+        z-index: 2;
+        position: relative;
         a{
             color: white;
             text-decoration: none;
@@ -136,8 +143,16 @@ $color-primary-blue: #455AA4;
     }
 }
 
+.infos{
+    position: relative;
+}
+
 .circuit{
     position: absolute;
-    top: 20px;
-    left: 800px; 
+    right: 0;
+    width: auto;
+    // width: 20vw;
+    height: 137vh;
+    top: 7vh;
+    z-index: 1;
 }
