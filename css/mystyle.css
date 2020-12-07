@@ -36,11 +36,22 @@
   width: 100%;
   height: auto; }
 
+.infos {
+  position: relative;
+  background: #455aa4;
+  background: linear-gradient(185deg, #455aa4 49.9%, #f18134 50%); }
+  .infos .circuit {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 137vh;
+    top: 7vh;
+    z-index: 1; }
+
 .info {
   min-height: 80vh;
-  background-color: #455AA4;
-  color: white;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
+  color: black;
+  z-index: 2;
   position: relative; }
   .info__try {
     max-width: 1020px;
@@ -73,12 +84,10 @@
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
 
 .info__2 {
-  background-color: #F18134;
   min-height: 90vh;
-  margin-top: -20vh; }
+  position: relative; }
   .info__2__delay {
     margin-top: 30vh;
-    background-color: #F18134;
     max-width: 1020px;
     min-height: 60vh;
     margin: auto; }

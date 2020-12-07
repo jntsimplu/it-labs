@@ -55,14 +55,25 @@ $color-primary-blue: #455AA4;
     height: auto;
 }
 
+.infos {
+    position: relative;
+    background: rgb(69,90,164);
+    background: linear-gradient(185deg, rgb(69, 90, 164) 49.9%, rgb(241, 129, 52) 50%);
 
+    .circuit {
+        position: absolute;
+        right: 0;
+        width: auto;
+        height: 137vh;
+        top: 7vh;
+        z-index: 1;
+    }
+}
 
 .info{
     min-height: 80vh;
-    background-color: $color-primary-blue;
-    color: white;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 75%);
-    // z-index: 1;
+    color: black;
+    z-index: 2;
     position: relative;
     &__try{
         max-width: 1020px;
@@ -106,12 +117,10 @@ $color-primary-blue: #455AA4;
 }
 
 .info__2{
-    background-color: $color-primary-orange;
     min-height: 90vh;
-    margin-top: -20vh;
+    position: relative;
     &__delay{
         margin-top: 30vh;
-        background-color: $color-primary-orange;
         max-width: 1020px;
         min-height: 60vh;
         margin: auto;
