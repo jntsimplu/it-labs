@@ -156,6 +156,61 @@
   width: 100%;
   height: auto; }
 
+.course {
+  background-image: url("/img/office.jpg");
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .course__helper {
+    flex: 0 0 80%;
+    align-self: flex-end; }
+    .course__helper--2 {
+      flex: 0 0 10%; }
+  .course__content {
+    flex: 1;
+    background-color: #c4c4c4;
+    width: 100%;
+    font-size: 2.8rem;
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .course__content {
+        font-size: 1.6rem; } }
+  .course__sign {
+    display: inline-block;
+    background-color: #c4c4c4;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: black;
+    font-size: 2.8rem; }
+    .course__sign:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 37.5em) {
+      .course__sign {
+        font-size: 1.6rem;
+        padding: .5rem 2rem;
+        margin-top: 1rem;
+        margin-right: 1rem; } }
+  .course__info {
+    flex: 0 0 50%;
+    padding: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .course__info {
+        padding: 0rem; } }
+  .course__price {
+    flex: 1;
+    text-align: end;
+    padding: 1rem; }
+
 .header {
   min-height: 568px;
   background-image: linear-gradient(rgba(241, 129, 52, 0.5), rgba(241, 129, 52, 0.5)), url("../img/office.jpg");
