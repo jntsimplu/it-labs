@@ -1,0 +1,50 @@
+.header{
+    min-height: 568px;
+    background-image: linear-gradient(rgba($color-primary-orange ,0.50), rgba($color-primary-orange,0.50)),
+    url("../img/office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+    &__info{
+        padding-right: 100px;
+        text-align: right;
+        max-width: 600px;
+        @include respond(br5){
+            padding-right: 0;
+            text-align: center;
+        }
+    }
+
+    
+
+    &__button{
+        display: inline-block;
+        background-color: $color-primary-blue;
+        padding: 10px 25px;
+        border-radius: 20px;
+        margin-top: 20px;
+        transition: all 0.2s;
+       
+
+        &:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+    }
+
+    @include respond(br5){
+        min-height: 30rem;
+    }
+
+    &__img{
+        @include respond(br5){
+            display: none;
+        }
+    }
+}
+
