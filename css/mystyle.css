@@ -60,6 +60,20 @@
     .info__2__button--delay a {
       font-size: 1.8rem; } }
 
+.course__content {
+  font-size: 2.8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .course__content {
+      font-size: 1.6rem; } }
+
+.course__sign {
+  color: black;
+  font-size: 2.8rem;
+  text-decoration: none; }
+  @media only screen and (max-width: 37.5em) {
+    .course__sign {
+      font-size: 1.6rem; } }
+
 .infos {
   position: relative;
   background: #455aa4;
@@ -150,7 +164,11 @@
   width: auto;
   height: 137vh;
   top: 7vh;
-  z-index: 1; }
+  z-index: 1;
+  height: auto; }
+  @media only screen and (max-width: 37.5em) {
+    .circuit {
+      display: none; } }
 
 .splide__slide img {
   width: 100%;
@@ -173,12 +191,8 @@
     flex: 1;
     background-color: #c4c4c4;
     width: 100%;
-    font-size: 2.8rem;
     display: flex;
     align-items: center; }
-    @media only screen and (max-width: 37.5em) {
-      .course__content {
-        font-size: 1.6rem; } }
   .course__sign {
     display: inline-block;
     background-color: #c4c4c4;
@@ -187,16 +201,12 @@
     border-radius: 2rem;
     margin-top: 2rem;
     margin-right: 2rem;
-    transition: all 0.2s;
-    text-decoration: none;
-    color: black;
-    font-size: 2.8rem; }
+    transition: all 0.2s; }
     .course__sign:hover {
       transform: translateY(-2px);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
     @media only screen and (max-width: 37.5em) {
       .course__sign {
-        font-size: 1.6rem;
         padding: .5rem 2rem;
         margin-top: 1rem;
         margin-right: 1rem; } }
@@ -245,4 +255,116 @@
     .header__img {
       display: none; } }
 
-      
+* {
+  box-sizing: border-box; }
+
+.containerSlider {
+  position: relative; }
+  .containerSlider .mySlides, .containerSlider .mySlides--2 {
+    display: none; }
+    .containerSlider .mySlides .numbertext, .containerSlider .mySlides--2 .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0; }
+    .containerSlider .mySlides img, .containerSlider .mySlides--2 img {
+      vertical-align: middle; }
+  .containerSlider .cursor {
+    cursor: pointer; }
+  .containerSlider .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white; }
+  .containerSlider .prev,
+  .containerSlider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none; }
+    .containerSlider .prev:hover,
+    .containerSlider .next:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+  .containerSlider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .containerSlider .row_slider::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .containerSlider .row_slider .column {
+    float: left;
+    width: 16.66%; }
+    .containerSlider .row_slider .column .demo, .containerSlider .row_slider .column .demo--2 {
+      opacity: 0.6; }
+      .containerSlider .row_slider .column .demo:hover, .containerSlider .row_slider .column .demo--2:hover {
+        opacity: 1; }
+    .containerSlider .row_slider .column .active:hover {
+      opacity: 1; }
+
+.mySlides, .mySlides--2 {
+  overflow: hidden;
+  max-height: 500px;
+  box-shadow: 0 5px 5px gray;
+  margin: 1rem;
+  border-radius: 1rem; }
+  .mySlides button.inscriere, .mySlides--2 button.inscriere {
+    position: absolute;
+    padding: 1rem 2rem;
+    top: 5%;
+    right: 5%;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    background-color: #222;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 2.2rem; }
+    .mySlides button.inscriere:hover, .mySlides--2 button.inscriere:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 37.5em) {
+      .mySlides button.inscriere, .mySlides--2 button.inscriere {
+        font-size: 2rem; } }
+
+.row_slider {
+  display: flex;
+  justify-content: space-between; }
+
+.containerSlider .row_slider .column {
+  height: 150px;
+  overflow: hidden;
+  margin: 1rem;
+  width: 14.646%;
+  box-shadow: 0 5px 5px gray;
+  border-radius: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .containerSlider .row_slider .column {
+      height: auto; } }
+
+.containerSlider .prev, .containerSlider .next {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.containerSlider .caption-container {
+  text-align: left;
+  background-color: #222;
+  padding: 10px 3rem;
+  color: white;
+  position: absolute;
+  width: 98.6%;
+  font-size: 2.2rem;
+  top: 58%; }
+  @media only screen and (max-width: 37.5em) {
+    .containerSlider .caption-container {
+      width: 95%;
+      font-size: 2rem; } }

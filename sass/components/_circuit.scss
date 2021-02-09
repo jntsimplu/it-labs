@@ -5,4 +5,8 @@
     height: 137vh;
     top: 7vh;
     z-index: 1;
+        height: auto;
+        @include respond(br5){
+            display: none;
+        }
 }
