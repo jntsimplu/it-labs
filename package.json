@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/mystyle.css -w"
+    "compile:sass": "node-sass src/sass/main.scss dist/css/mystyle.css -w",
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,11 @@
   },
   "homepage": "https://github.com/jntsimplu/it-labs#readme",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "html-webpack-plugin": "^5.0.0",
+    "node-sass": "^5.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "@splidejs/splide": "^2.4.21"

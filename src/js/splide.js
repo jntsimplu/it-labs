@@ -5,6 +5,7 @@ showSlides2(slideIndex2);
 
 // Next/previous controls
 function plusSlides(n) {
+  console.log('In the function');
   showSlides(slideIndex += n);
 }
 
