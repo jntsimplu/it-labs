@@ -12,9 +12,9 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html'
         }),
-        new HtmlWebpackPlugin({
-            filename:'',
-            template: ''
-        })
+        // new HtmlWebpackPlugin({
+        //     filename:'',
+        //     template: ''
+        // })
     ]
 };
